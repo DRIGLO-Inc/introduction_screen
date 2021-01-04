@@ -40,7 +40,8 @@ class PageDecoration {
 
   /// Padding of description
   ///
-  /// @Default: `EdgeInsets.zero`
+  /// @Default: `E
+  /// dgeInsets.zero`
   final EdgeInsets descriptionPadding;
 
   /// Padding of footer
@@ -51,21 +52,21 @@ class PageDecoration {
   const PageDecoration({
     this.pageColor,
     this.titleTextStyle = const TextStyle(
-      fontSize: 20.0,
+      fontSize: 20,
       fontWeight: FontWeight.bold,
     ),
     this.bodyTextStyle = const TextStyle(
-      fontSize: 18.0,
+      fontSize: 18,
       fontWeight: FontWeight.normal,
     ),
     this.boxDecoration,
     this.imageFlex = 1,
     this.bodyFlex = 1,
-    this.imagePadding = const EdgeInsets.only(bottom: 24.0),
-    this.contentPadding = const EdgeInsets.all(16.0),
-    this.titlePadding = const EdgeInsets.only(bottom: 24.0),
+    this.imagePadding = const EdgeInsets.only(top: 12),
+    this.contentPadding = const EdgeInsets.only(top: 48),
+    this.titlePadding = const EdgeInsets.only(top: 12),
     this.descriptionPadding = EdgeInsets.zero,
-    this.footerPadding = const EdgeInsets.symmetric(vertical: 24.0),
+    this.footerPadding = const EdgeInsets.symmetric(vertical: 24),
   }) : assert(pageColor == null || boxDecoration == null,
             'Cannot provide both a Color and a BoxDecoration\n');
 }
