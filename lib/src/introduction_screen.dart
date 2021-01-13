@@ -220,6 +220,7 @@ class IntroductionScreenState extends State<IntroductionScreen> {
                               dotsCount: widget.pages.length,
                               position: _currentPage,
                               decorator: const DotsDecorator(
+                                activeColor: Color(0xFFE8B2BF),
                                 size: Size.fromRadius(5),
                                 activeSize: Size.fromRadius(5),
                               ),
