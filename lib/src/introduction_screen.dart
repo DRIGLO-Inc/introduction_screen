@@ -209,7 +209,7 @@ class IntroductionScreenState extends State<IntroductionScreen> {
           ),
           Column(
             children: <Widget>[
-              const SizedBox(height: 15),
+              const SizedBox(height: 2),
               Row(
                 children: [
                   Expanded(
@@ -220,7 +220,7 @@ class IntroductionScreenState extends State<IntroductionScreen> {
                               dotsCount: widget.pages.length,
                               position: _currentPage,
                               decorator: const DotsDecorator(
-                                activeColor: Color(0xFFE8B2BF),
+                                // activeColor: Color(0xFFE8B2BF),
                                 size: Size.fromRadius(5),
                                 activeSize: Size.fromRadius(5),
                               ),
@@ -230,11 +230,11 @@ class IntroductionScreenState extends State<IntroductionScreen> {
                   ),
                 ],
               ),
-              const SizedBox(height: 24),
+              const SizedBox(height: 15),
               Center(child: isLastPage ? doneBtn : null),
-              const SizedBox(height: 24),
+              // const SizedBox(height: 24),
               captionsWidget,
-              const SizedBox(height: 24),
+              // const SizedBox(height: 24),
             ],
           ),
         ],
